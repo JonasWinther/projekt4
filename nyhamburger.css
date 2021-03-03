@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #fff;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+}
+.slidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-top: 0px;
+
+}
+.slidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 18px;
+  color: #3F6172;
+  display: block;
+  transition: 0.3s;
+
+}
+.slidenav a:hover {
+  text-decoration: none;
+
+}
+.icon {
+ float: right;
+ margin: 15px 30px;
+ font-size: 36px;
+ color: #3E6071;
+ cursor: pointer;
+
+
+}
+.slidenav .closeicon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 40px;
+  margin: 4px;
+  text-decoration: none;
+  color: #3E6071;
+
+}
+.nav{
+  text-decoration: none;
+  height: 70px;
+
+}
+.number {
+  color: grey;
+
+}
+.navnav {
+  color: #D7A560;
+  text-decoration: none;
+  
+}
