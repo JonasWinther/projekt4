@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HoC</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="scripts/reveal.js" defer></script>
     <script src="scripts/kontaktjs.js" defer></script>
     <script src="scripts/nyhamburger.js" defer></script>
@@ -12,20 +12,71 @@
     <script src="scripts/parallax.js" defer></script>
   </head>
   <body>
+    <header>
+      <div class="progress-bar">
+        <div class="progress-bar-inner">0%</div>
+      </div>
+      <div id="slidenav" class="slidenav">
+        <a
+          href="javascript:void(0)"
+          class="closeicon"
+          id="closeicon"
+          onclick="closnav()"
+          >&times;
+        </a>
+        <ol id="navigation">
+          <li class="nav-item">
+            <a title="Projekter" class="nav-text" href="#">Projekter</a>
+          </li>
+          <li class="nav-item">
+            <a title="Det vi tilbyder" class="nav-text" href="#"
+              >Det vi tilbyder</a
+            >
+          </li>
+          <li class="nav-item">
+            <a title="At arbejde sammen med os" class="nav-text" href="#"
+              >At arbejde sammen med os</a
+            >
+          </li>
+          <li class="nav-item">
+            <a title="Start dit projekt" class="nav-text nav4" href="#"
+              >Start dit projekt</a
+            >
+          </li>
+          <li class="nav-item">
+            <a title="Lær os at kende" class="nav-text" href="#"
+              >Lær os at kende</a
+            >
+          </li>
+          <li class="nav-item">
+            <a title="Jobs i huset" class="nav-text" href="#">Jobs i huset</a>
+          </li>
+          <li class="nav-item">
+            <a title="Blog og nyheder" class="nav-text" href="#"
+              >Blog og nyheder</a
+            >
+          </li>
+          <li class="nav-item">
+            <a title="Kontakt" class="nav-text" href="#">Kontakt</a>
+          </li>
+        </ol>
+      </div>
+      <span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+    </header>
 
     <section class="hero">
       <div class="parallax1">
-      <img src="images/1.png" data-speed="-5" class="layer">
-      <img src="images/2.png" data-speed="5" class="layer">
-      <img src="images/3.png" data-speed="6" class="layer">
-      <img src="images/4.png" data-speed="2" class="layer">
-      <img src="images/5.png" data-speed="8" class="layer">
-      <img src="images/6.png" data-speed="-2" class="layer">
-      <img src="images/7.png" data-speed="4" class="layer">
-      <img src="images/8.png" data-speed="-9" class="layer">
-      <img src="images/9.png" data-speed="6" class="layer">
-      <img src="images/10.png" data-speed="-5" class="layer">
-      <img src="images/11.png" data-speed="-7" class="layer">
+        <img src="images/1.png" data-speed="-5" class="layer" />
+        <img src="images/2.png" data-speed="5" class="layer" />
+        <img src="images/3.png" data-speed="6" class="layer" />
+        <img src="images/4.png" data-speed="2" class="layer" />
+        <img src="images/5.png" data-speed="8" class="layer" />
+        <img src="images/6.png" data-speed="-2" class="layer" />
+        <img src="images/7.png" data-speed="4" class="layer" />
+        <img src="images/8.png" data-speed="-9" class="layer" />
+        <img src="images/9.png" data-speed="6" class="layer" />
+        <img src="images/10.png" data-speed="-5" class="layer" />
+        <img src="images/11.png" data-speed="-7" class="layer" />
       </div>
       <div class="container">
         <div class="main-message">
@@ -35,99 +86,111 @@
         </div>
       </div>
 
-    <div class="scroll_view">
-      <div class="scroll">
-    <p>scroll<span class="view">View.</span></p>
-    </div>
-    	<div class="arrow">
-    	                <span></span>
-    	                <span></span>
-    	                <span></span>
-    	</div>
-    </div>
-
+      <a href="#scrollafklaring">
+        <div class="scroll_view">
+          <div class="scroll">
+            <p>scroll<span class="view">View.</span></p>
+          </div>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </a>
     </section>
 
     <section>
-    <div class="section-1">
-      <div class="container reveal">
-      <h1 class="afklaring"><span class="green">01</span> Afklaringsforløbet</h1>
-      <div class="afklaring_grid">
-       <div class="afklaring_tekst">
-        <h2>Hvorfor et afklaringsforløb?</h2>
-        <p>
-          IT-projekter er komplekse og følger sjældent den samme skabelon. Det er
-          derfor vigtigt at komme godt fra start, da det er meget nemmere at
-          tilpasse produktet i afklaringsfasen end midt i udviklingsfasen. Der er
-          mange afhængigheder, som skal tages højde for, og fordi vi udvikler
-          skræddersyede løsninger, har hvert enkelt projekt sine egne ‘særtilfælde’.
-          For at komme udfordringer i forkøbet har vi skabt et afklaringsforløb med
-          afsæt i vores erfaring. Forløbet sikrer grundig afdækning af din løsning
-          fra start, så vi undgår store ekstraomkostninger, overskredne deadlines
-          og et samarbejde, der viser sig, ikke at være ordentligt afstemt på forventninger.
-        </p>
-        <h2>Hvad er et afklaringsforløb?</h2>
-        <p>
-          Afklaringsforløbet forløber sig gennem fem faser som vi vil komme mere
-          uddybende ind på senere hen. Vi starter med din idé/udfordring og bevæger
-          os herfra dybere ind i løsningen, inden vi afslutningsvis samler vores indsigter
-          i et færdigt overblik til dig.
-        </p>
-        <br>
-        <p>
-          Afklaringsforløbet sikrer at alle forventninger er
-          afstemte, inden vi påbegynder design og udvikling.
-        </p>
-        <br>
-        <p>
-          Til afklaringsforløbet, hører der et konkret udbytte med betydning for
-          udformningen af den endelige løsning, som afdækker et
-          forretningsperspektiv, såvel som et brugerperspektiv. Gennemarbejdelsen
-          af afklaringsforløbet, ligger derfor et solidt grundlag for den videre design- og udviklingsproces.
-        </p>
+      <div class="section-1" id="scrollafklaring">
+        <div class="container reveal">
+          <h1 class="afklaring">
+            <span class="green">01</span> Afklaringsforløbet
+          </h1>
+          <div class="afklaring_grid">
+            <div class="afklaring_tekst">
+              <h2>Hvorfor et afklaringsforløb?</h2>
+              <p>
+                IT-projekter er komplekse og følger sjældent den samme skabelon.
+                Det er derfor vigtigt at komme godt fra start, da det er meget
+                nemmere at tilpasse produktet i afklaringsfasen end midt i
+                udviklingsfasen. Der er mange afhængigheder, som skal tages
+                højde for, og fordi vi udvikler skræddersyede løsninger, har
+                hvert enkelt projekt sine egne ‘særtilfælde’. For at komme
+                udfordringer i forkøbet har vi skabt et afklaringsforløb med
+                afsæt i vores erfaring. Forløbet sikrer grundig afdækning af din
+                løsning fra start, så vi undgår store ekstraomkostninger,
+                overskredne deadlines og et samarbejde, der viser sig, ikke at
+                være ordentligt afstemt på forventninger.
+              </p>
+              <h2>Hvad er et afklaringsforløb?</h2>
+              <p>
+                Afklaringsforløbet forløber sig gennem fem faser som vi vil
+                komme mere uddybende ind på senere hen. Vi starter med din
+                idé/udfordring og bevæger os herfra dybere ind i løsningen,
+                inden vi afslutningsvis samler vores indsigter i et færdigt
+                overblik til dig.
+              </p>
+              <br />
+              <p>
+                Afklaringsforløbet sikrer at alle forventninger er afstemte,
+                inden vi påbegynder design og udvikling.
+              </p>
+              <br />
+              <p>
+                Til afklaringsforløbet, hører der et konkret udbytte med
+                betydning for udformningen af den endelige løsning, som afdækker
+                et forretningsperspektiv, såvel som et brugerperspektiv.
+                Gennemarbejdelsen af afklaringsforløbet, ligger derfor et solidt
+                grundlag for den videre design- og udviklingsproces.
+              </p>
 
-        <h2>Hvordan foregår det?</h2>
-        <p>
-          Vores proces er agil og tilpasses ud fra, hvilken type kunde eller
-          projekt, vi arbejder med. Vi arbejder iterativt, da det giver den bedste
-          mulighed for at inkludere dig i processen. Hver fase gentages nemlig i
-          korte feedback loops, så vi løbende sikrer at produktet udvikles i
-          overens- stemmelse med forretningens, brugernes
-          og de tekniske behov. Det er, som tidligere nævnt, langt billigere at
-          rette løsningen i starten end når brugerne står med det færdige produkt i hånden.
-        </p>
+              <h2>Hvordan foregår det?</h2>
+              <p>
+                Vores proces er agil og tilpasses ud fra, hvilken type kunde
+                eller projekt, vi arbejder med. Vi arbejder iterativt, da det
+                giver den bedste mulighed for at inkludere dig i processen. Hver
+                fase gentages nemlig i korte feedback loops, så vi løbende
+                sikrer at produktet udvikles i overens- stemmelse med
+                forretningens, brugernes og de tekniske behov. Det er, som
+                tidligere nævnt, langt billigere at rette løsningen i starten
+                end når brugerne står med det færdige produkt i hånden.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-    </div>
     </section>
 
     <section>
-    <div class="section-2">
-      <div class="container reveal">
-        <h1 class="fem_faser"><span class="orange">02</span> De fem faser</h1>
+      <div class="section-2">
+        <div class="container reveal">
+          <h1 class="fem_faser"><span class="orange">02</span> De fem faser</h1>
           <div class="faser_grid">
             <div class="faser_tekst">
               <p>
-              Afklaringsforløbet er bygget op omkring fem faser, somtjener hver sit formål. er.
+                Afklaringsforløbet er bygget op omkring fem faser, somtjener
+                hver sit formål. er.
               </p>
-              <br>
+              <br />
               <p>
-              Indledningsvis indsamler vi data, som løbende bearbejdes og formes,
-              så vi til sidst står med en gennemarbejdet plan for din løsning. På den
-              baggrund er det også muligt at lægge et realistisk budget.
+                Indledningsvis indsamler vi data, som løbende bearbejdes og
+                formes, så vi til sidst står med en gennemarbejdet plan for din
+                løsning. På den baggrund er det også muligt at lægge et
+                realistisk budget.
               </p>
-              <br>
+              <br />
               <p>
-              Hver løsning er unik, og indholdet i de forskellige faser vil derfor
-              variere fra projekt til projekt. Måske har du allerede selv
-              udarbejdet en markedsanalyse eller arbejdet med brugerinddragelse?
-              Vi sammensætter derfor forløbet ud fra dine specifikke behov.
+                Hver løsning er unik, og indholdet i de forskellige faser vil
+                derfor variere fra projekt til projekt. Måske har du allerede
+                selv udarbejdet en markedsanalyse eller arbejdet med
+                brugerinddragelse? Vi sammensætter derfor forløbet ud fra dine
+                specifikke behov.
               </p>
-              <br>
+              <br />
               <p>
-              På de følgende sider uddyber vi de enkelte faser, og giver dig et overblik,
-              så du ved præcist, hvordan vi afdækker din kommende løsning.
+                På de følgende sider uddyber vi de enkelte faser, og giver dig
+                et overblik, så du ved præcist, hvordan vi afdækker din kommende
+                løsning.
               </p>
             </div>
           </div>
@@ -136,25 +199,30 @@
     </section>
     <section>
       <div class="container reveal">
-      <div class="kontakt">
-        <h1><span class="purple">03</span> Kontakt os</h1>
-        <div class="kontaktgrid">
-          <div class="kontakttekst">
-            <p>
-              Er du klar til at sætte i gang, så ring, eller skriv os en mail med det samme!
-              <br>
-              <br>
-              Hvis du gerne lige vil vide lidt mere om, hvilke projekter vi har lavet, hvilke services vi tilbyder,
-              eller hvordan det er at arbejde sammen med os, så tag et kig rundt på hjemmesiden.
-            </p>
+        <div class="kontakt">
+          <h1><span class="purple">03</span> Kontakt os</h1>
+          <div class="kontaktgrid">
+            <div class="kontakttekst">
+              <p>
+                Er du klar til at sætte i gang, så ring, eller skriv os en mail
+                med det samme!
+                <br />
+                <br />
+                Hvis du gerne lige vil vide lidt mere om, hvilke projekter vi
+                har lavet, hvilke services vi tilbyder, eller hvordan det er at
+                arbejde sammen med os, så tag et kig rundt på hjemmesiden.
+              </p>
+            </div>
           </div>
+          <a
+            href="https://www.houseofcode.io/kontakt/"
+            class="buttonkontakt kontaktos"
+            >Kontakt os</a
+          >
+          <div id="kontaktkommentar"></div>
+          <h2>#StayAwesome</h2>
         </div>
-        <a href="https://www.houseofcode.io/kontakt/" class="buttonkontakt kontaktos">Kontakt os</a>
-        <div id="kontaktkommentar"></div>
-        <h2>#StayAwesome</h2>
-      </div>
       </div>
     </section>
-    
   </body>
 </html>
