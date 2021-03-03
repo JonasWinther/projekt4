@@ -36,6 +36,8 @@ main {
   animation: fadeEffect 0.5s;
   height: 498px;
   cursor: pointer;
+  color: white;
+  margin: 5px;
 
 }
 
@@ -61,6 +63,7 @@ main {
 
 #fase1 {
   background-color: #aab97d;
+
 }
 
 .tabcontents > h3 {
