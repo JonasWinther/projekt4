@@ -158,21 +158,59 @@ html {
 .section-1 {
   padding-top: 7%;
 }
+
+.afklaring-tekst1 {
+  grid-area: tekst1;
+  margin-right: 35%;
+}
+
+.afklaring-tekst2 {
+  grid-area: tekst2;
+  margin-right: 35%;
+}
+
+.afklaring-tekst3 {
+  grid-area: tekst3;
+  margin-right: 35%;
+}
+.afklaring-img1 {
+  grid-area: img1;
+  height: 250px;
+  width: 250px;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+.afklaring-img2 {
+  grid-area: img2;
+  height: 250px;
+  width: 250px;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+
+.afklaring-img3 {
+  grid-area: img3;
+  height: 200px;
+  width: 200px;
+  padding-left: 23%;
+  padding-top: 7%;
+}
+
 /*grids*/
 .afklaring_grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-areas: "afklaring_tekst afklaring_billede nav";
+  grid-template-columns: 32.5% 67.5%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "tekst1 img1"
+    "tekst2 img2"
+    "tekst3 img3";
 }
-
-.afklaring_tekst {
-  padding-right: 35%;
-}
-
 .faser_grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-areas: "afklaring_tekst afklaring_billede nav";
+  /*grid-template-areas: "afklaring_tekst afklaring_billede nav";*/
 }
 
 .faser_tekst {
@@ -196,7 +234,7 @@ html {
 
 .scroll {
   position: absolute;
-  top: 90%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #6f95aa;
@@ -211,7 +249,7 @@ html {
 }
 .arrow {
   position: absolute;
-  top: 94%;
+  top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
