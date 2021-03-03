@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+* {
+  font-family: "Roboto Mono", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 5%;
+}
+section {
+  padding: 5rem 0;
+}
+.kontakt h1 {
+  font-size: 40px;
+  color: #515f6d;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.purple {
+  color: #aa81ac;
+}
+.kontakt p {
+  line-height: 1.7rem;
+  font-size: 15px;
+  letter-spacing: -0.013em;
+  padding-bottom: 2rem;
+}
+#kontaktkommentar {
+  background-color: #ffffff;
+  width: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 22px;
+  color: #515f6d;
+  font-size: 22px;
+  font-weight: 700;
+}
+.kontakt h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #aa81ac;
+}
+.kontaktgrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "kontakttekst kontaktbillede nav";
+}
+.kontakttekst {
+  padding-right: 35%;
+}
+.button {
+  background-color: #aa81ac;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 5px 20px;
+}
+.kontaktos {
+  background-color: #ffffff;
+  color: #aa81ac;
+  border: 5px solid #aa81ac;
+}
