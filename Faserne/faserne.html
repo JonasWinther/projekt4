@@ -10,87 +10,84 @@
   </head>
   <body>
     <main>
-      <div class="tab">
-
-        <button class="tablinks1" onclick="openFase(event,'fase1')">
+      <div class="tab" id="hide">
+        <button class="tablinks1 " onclick="openFase(event,'fase1');myFunction() ">
           <h3>#BeCurious</h3>
           <h4>Tryk for at læse mere</h4>
-          <img src="/pictures/billed1.png" alt="Billed 1" class="billede">
+          <img src="/pictures/billed1.png" alt="Billed 1" class="billede" />
         </button>
 
-        <button class="tablinks2" onclick="openFase(event,'fase2')">
-            <h3>#BeCreative</h3>
-            <h4>Tryk for at læse mere</h4>
-            <img src="/pictures/billed2.png" alt="Billed 1" class="billede">
+        <button class="tablinks2" id="hide2" onclick="openFase(event,'fase2');myFunction()">
+          <h3>#BeCreative</h3>
+          <h4>Tryk for at læse mere</h4>
+          <img src="/pictures/billed2.png" alt="Billed 1" class="billede" />
         </button>
 
-        <button class="tablinks3" onclick="openFase(event,'fase3')">
-           <h3> #BeTechnical</h3>
-           <h4>Tryk for at læse mere</h4>
-           <img src="/pictures/billed3.png" alt="Billed 1" class="billede">
+        <button class="tablinks3" onclick="openFase(event,'fase3');myFunction()">
+          <h3>#BeTechnical</h3>
+          <h4>Tryk for at læse mere</h4>
+          <img src="/pictures/billed3.png" alt="Billed 1" class="billede" />
         </button>
 
-        <button class="tablinks4" onclick="openFase(event,'fase4')">
-           <h3> #BeSpecific</h3>
-           <h4>Tryk for at læse mere</h4>
-           <img src="/pictures/billed4.png" alt="Billed 1" class="billede">
+        <button class="tablinks4" onclick="openFase(event,'fase4');myFunction()">
+          <h3>#BeSpecific</h3>
+          <h4>Tryk for at læse mere</h4>
+          <img src="/pictures/billed4.png" alt="Billed 1" class="billede" />
         </button>
 
-        <button class="tablinks5" onclick="openFase(event,'fase5')">
-            <h3>#BeAwesome</h3>
-            <h4>Tryk for at læse mere</h4>
-            <img src="/pictures/billed5.png" alt="Billed 1" class="billede">
+        <button class="tablinks5" onclick="openFase(event,'fase5');myFunction()">
+          <h3>#BeAwesome</h3>
+          <h4>Tryk for at læse mere</h4>
+          <img src="/pictures/billed5.png" alt="Billed 1" class="billede" />
         </button>
-
       </div>
-
-      <div id="fase1" class="tabcontent">
-
+      <div class="tabcontents">
+        <button id="fase1" class="tabcontent" onclick="fjernclass();">
           <h3>Formål</h3>
-          <p>// Forventningsafstemning <br>
-            // Idé/udfordring og behovsworkshop <br>
-            // Markedsanalyse <br>
-            // Brugerinddragelse</p>
-
-      </div>
-      <div id="fase2" class="tabcontent">
-
-        <h3>Formål 2</h3>
-        <p>// Forventningsafstemning <br>
-          // Idé/udfordring og behovsworkshop <br>
-          // Markedsanalyse <br>
-          // Brugerinddragelse</p>
-
-    </div>
-    <div id="fase3" class="tabcontent">
-
-        <h3>Formål 3</h3>
-        <p>// Forventningsafstemning <br>
-          // Idé/udfordring og behovsworkshop <br>
-          // Markedsanalyse <br>
-          // Brugerinddragelse</p>
-
-    </div>
-    <div id="fase4" class="tabcontent">
-
-        <h3>Formål 4</h3>
-        <p>// Forventningsafstemning <br>
-          // Idé/udfordring og behovsworkshop <br>
-          // Markedsanalyse <br>
-          // Brugerinddragelse</p>
-
-    </div>
-    <div id="fase5" class="tabcontent">
-
-        <h3>Formål 5</h3>
-        <p>// Forventningsafstemning <br>
-          // Idé/udfordring og behovsworkshop <br>
-          // Markedsanalyse <br>
-          // Brugerinddragelse</p>
-
-    </div>
+          <p>
+            // Forventningsafstemning <br />
+            // Idé/udfordring og behovsworkshop <br />
+            // Markedsanalyse <br />
+            // Brugerinddragelse
+          </p>
+        </button> 
+        <button id="fase2" class="tabcontent" onclick="fjernclass();">
+          <h3>Formål 2</h3>
+          <p>
+            // Forventningsafstemning <br />
+            // Idé/udfordring og behovsworkshop <br />
+            // Markedsanalyse <br />
+            // Brugerinddragelse
+          </p>
+        </button>
+        <button id="fase3" class="tabcontent" onclick="fjernclass();">
+          <h3>Formål 3</h3>
+          <p>
+            // Forventningsafstemning <br />
+            // Idé/udfordring og behovsworkshop <br />
+            // Markedsanalyse <br />
+            // Brugerinddragelse
+          </p>
+        </button>
+        <button id="fase4" class="tabcontent" onclick="fjernclass();">
+          <h3>Formål 4</h3>
+          <p>
+            // Forventningsafstemning <br />
+            // Idé/udfordring og behovsworkshop <br />
+            // Markedsanalyse <br />
+            // Brugerinddragelse
+          </p>
+        </buttoniv>
+        <button id="fase5" class="tabcontent" onclick="fjernclass();">
+          <h3>Formål 5</h3>
+          <p>
+            // Forventningsafstemning <br />
+            // Idé/udfordring og behovsworkshop <br />
+            // Markedsanalyse <br />
+            // Brugerinddragelse
+          </p>
+        </button>
       </div>
     </main>
   </body>
-  
 </html>
