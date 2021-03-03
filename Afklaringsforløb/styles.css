@@ -134,6 +134,7 @@ html {
 
 .main-message {
   padding-top: 175px;
+  margin-left: 7%;
 }
 
 .main-message h1 {
@@ -234,10 +235,11 @@ html {
 
 .scroll {
   position: absolute;
-  top: 70%;
+  top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #6f95aa;
+  margin-left: 0;
 }
 
 .scroll p {
@@ -249,8 +251,9 @@ html {
 }
 .arrow {
   position: absolute;
-  top: 74%;
+  top: 84%;
   left: 50%;
+  margin-left: 0;
   transform: translate(-50%, -50%);
 }
 .arrow span {
