@@ -4,11 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoC</title>
-    <link rel="stylesheet" href="hoc.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/reveal.js" defer></script>
+    <script src="scripts/kontaktjs.js" defer></script>
+    <script src="scripts/nyhamburger.js" defer></script>
+    <script src="scripts/scrollprogress.js" defer></script>
+    <script src="scripts/parallax.js" defer></script>
   </head>
   <body>
 
     <section class="hero">
+      <div class="parallax1">
+      <img src="images/1.png" data-speed="-5" class="layer">
+      <img src="images/2.png" data-speed="5" class="layer">
+      <img src="images/3.png" data-speed="6" class="layer">
+      <img src="images/4.png" data-speed="2" class="layer">
+      <img src="images/5.png" data-speed="8" class="layer">
+      <img src="images/6.png" data-speed="-2" class="layer">
+      <img src="images/7.png" data-speed="4" class="layer">
+      <img src="images/8.png" data-speed="-9" class="layer">
+      <img src="images/9.png" data-speed="6" class="layer">
+      <img src="images/10.png" data-speed="-5" class="layer">
+      <img src="images/11.png" data-speed="-7" class="layer">
+      </div>
       <div class="container">
         <div class="main-message">
           <h1>Kom godt fra start<span class="bracket"> {</span></h1>
@@ -116,7 +134,27 @@
         </div>
       </div>
     </section>
-
-    <script src="reveal.js"></script>
+    <section>
+      <div class="container reveal">
+      <div class="kontakt">
+        <h1><span class="purple">03</span> Kontakt os</h1>
+        <div class="kontaktgrid">
+          <div class="kontakttekst">
+            <p>
+              Er du klar til at sætte i gang, så ring, eller skriv os en mail med det samme!
+              <br>
+              <br>
+              Hvis du gerne lige vil vide lidt mere om, hvilke projekter vi har lavet, hvilke services vi tilbyder,
+              eller hvordan det er at arbejde sammen med os, så tag et kig rundt på hjemmesiden.
+            </p>
+          </div>
+        </div>
+        <a href="https://www.houseofcode.io/kontakt/" class="buttonkontakt kontaktos">Kontakt os</a>
+        <div id="kontaktkommentar"></div>
+        <h2>#StayAwesome</h2>
+      </div>
+      </div>
+    </section>
+    
   </body>
 </html>
