@@ -2,9 +2,22 @@ body {
   justify-self: center;
   font-family: Roboto Mono;
 }
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 main {
   height: 500px;
   width: 800px;
+  display: grid;
+  grid-template-columns: 138;
+  grid-template-rows: 498px;
+  grid-template-areas: "a";
 }
 
 .tab {
@@ -13,17 +26,64 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: baseline;
+  grid-area: a;
+  grid-gap: 10px;
 }
 
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
+  -webkit-animation: fadeEffect 0.5s;
+  animation: fadeEffect 0.5s;
+  height: 498px;
+  cursor: pointer;
+
 }
 
+
+
+.tabcontents {
+  grid-area: a;
+  height: 498px;
+  width: 800;
+}
+
+.tabcontents > button {
+  text-align: left;
+  height: 498px;
+  width: 800px;
+  border: none;
+  font: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+/* Faser styling */
+
+#fase1 {
+  background-color: #aab97d;
+}
+
+.tabcontents > h3 {
+  margin-block-start: none;
+  margin-block-end: none;
+}
+
+#fase2 {
+  background-color: #c79e69;
+}
+
+#fase3 {
+  background-color: #a484a9;
+}
+
+#fase4 {
+  background-color: #6f95aa;
+}
+
+#fase5 {
+  background-color: #cb7854;
+}
 .tab > button {
-  margin: 5px;
   text-align: center;
   display: grid;
   grid-template-rows: 100px 100px 100px 100px 100px;
@@ -41,13 +101,8 @@ main {
   outline: none;
 }
 .tab button:hover {
-  /* background-color: #ccc; */
   opacity: 0.7;
   box-shadow: honeydew 1px 2px;
-}
-.tab button.active {
-  /* background-color: #ccc; */
-  opacity: 0.7;
 }
 
 .billede {
@@ -140,4 +195,8 @@ main {
   to {
     opacity: 1;
   }
+}
+
+.test {
+  visibility: hidden;
 }
