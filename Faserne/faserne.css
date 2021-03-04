@@ -12,10 +12,9 @@ html {
   padding: 0;
 }
 main {
-  height: 500px;
-  width: 800px;
-  display: grid;
-  grid-template-columns: 138;
+  height: 6000px;
+  width: 1000px;
+  display: grid;  
   grid-template-rows: 498px;
   grid-template-areas: "a";
 }
@@ -27,32 +26,31 @@ main {
   justify-content: center;
   align-items: baseline;
   grid-area: a;
-  grid-gap: 10px;
+  grid-gap: 20px;
+  height: 600px;
 }
 
 .tabcontent {
   display: none;
   -webkit-animation: fadeEffect 0.5s;
   animation: fadeEffect 0.5s;
-  height: 498px;
+  height: 600px;
   cursor: pointer;
   color: white;
-  margin: 5px;
-
 }
 
 
 
 .tabcontents {
   grid-area: a;
-  height: 498px;
-  width: 800;
+  height: 600px;
+  width: 1000px;
 }
 
 .tabcontents > button {
   text-align: left;
-  height: 498px;
-  width: 800px;
+  height: 600px;
+  width: 1000px;
   border: none;
   font: inherit;
   font-size: inherit;
@@ -89,20 +87,25 @@ main {
 .tab > button {
   text-align: center;
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-rows: 120px 120px 120px 120px 120px;
   grid-template-areas:
     "a"
     "b"
     "c"
     "d"
     "e";
-  height: 500px;
+  height: 600px;
   color: white;
   cursor: pointer;
   border: none;
   font: inherit;
   outline: none;
 }
+
+button > h4 {
+  margin-top: 40px;
+}
+
 .tab button:hover {
   opacity: 0.7;
   box-shadow: honeydew 1px 2px;
