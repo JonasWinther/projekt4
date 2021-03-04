@@ -176,7 +176,7 @@ html {
 }
 .afklaring-img1 {
   grid-area: img1;
-  height: 250px;
+  height: 300px;
   width: auto;
   padding-left: 20%;
   padding-top: 5%;
@@ -209,11 +209,12 @@ html {
     "tekst3 img3";
 }
 
-.fasergrid-img1{
+.fasergrid-img1 {
   grid-area: img4;
   height: 250px;
   width: 250px;
   padding-left: 20%;
+  padding-top: 5%;
 }
 
 .faser_grid {
@@ -223,7 +224,7 @@ html {
   grid-template-areas: "tekst4 img4";
 }
 
-.faser_tekst {
+.faser-tekst {
   grid-area: tekst4;
   padding-right: 35%;
 }
@@ -245,7 +246,7 @@ html {
 
 .scroll {
   position: absolute;
-  top: 83%;
+  top: 84%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #6f95aa;
@@ -261,7 +262,7 @@ html {
 }
 .arrow {
   position: absolute;
-  top: 84%;
+  top: 89%;
   left: 50%;
   margin-left: 0;
   transform: translate(-50%, -50%);
@@ -429,17 +430,215 @@ li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+/*Faserne*/
+main {
+  height: 800px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 138;
+  grid-template-rows: 498px;
+  grid-template-areas: "a";
+  margin-left: 7%;
+}
+main p {
+  font-size: 15px;
+}
 
-@media screen and (max-width: 1500px){
-  .afklaring-img1{
+.tab {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: baseline;
+  grid-area: a;
+  grid-gap: 10px;
+  height: 600px;
+}
+
+.tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 0.5s;
+  animation: fadeEffect 0.5s;
+  height: 498px;
+  cursor: pointer;
+  color: white;
+  margin: 5px;
+}
+
+.tabcontents {
+  grid-area: a;
+  height: 498px;
+  width: 800;
+}
+
+.tabcontents > button {
+  text-align: left;
+  height: 498px;
+  width: 800px;
+  border: none;
+  font: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+/* Faser styling */
+
+#fase1 {
+  background-color: #aab97d;
+}
+
+.tabcontents > h3 {
+  margin-block-start: none;
+  margin-block-end: none;
+}
+
+#fase2 {
+  background-color: #c79e69;
+}
+
+#fase3 {
+  background-color: #a484a9;
+}
+
+#fase4 {
+  background-color: #6f95aa;
+}
+
+#fase5 {
+  background-color: #cb7854;
+}
+.tab > button {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+  height: 500px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font: inherit;
+  outline: none;
+}
+.tab button:hover {
+  opacity: 0.7;
+  box-shadow: honeydew 1px 2px;
+}
+
+.billede {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.tablinks1 > h3 {
+  grid-area: b;
+}
+.tablinks1 > h4 {
+  grid-area: d;
+}
+.tablinks1 > img {
+  grid-area: c;
+}
+.tablinks1 {
+  background-color: #aab97d;
+  justify-content: center;
+  margin-top: auto;
+  height: 600px;
+}
+
+.tablinks2 > h3 {
+  grid-area: b;
+}
+.tablinks2 > h4 {
+  grid-area: d;
+}
+.tablinks2 > img {
+  grid-area: c;
+}
+.tablinks2 {
+  background-color: #c79e69;
+}
+
+.tablinks3 > h3 {
+  grid-area: b;
+}
+.tablinks3 > h4 {
+  grid-area: d;
+}
+.tablinks3 > img {
+  grid-area: c;
+}
+.tablinks3 {
+  background-color: #a484a9;
+}
+
+.tablinks4 > h3 {
+  grid-area: b;
+}
+.tablinks4 > h4 {
+  grid-area: d;
+}
+.tablinks4 > img {
+  grid-area: c;
+}
+.tablinks4 {
+  background-color: #6f95aa;
+}
+
+.tablinks5 > h3 {
+  grid-area: b;
+}
+.tablinks5 > h4 {
+  grid-area: d;
+}
+.tablinks5 > img {
+  grid-area: c;
+}
+.tablinks5 {
+  background-color: #cb7854;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.test {
+  visibility: hidden;
+}
+
+.fase-1 {
+  margin-left: 30%;
+}
+@media screen and (max-width: 1500px) {
+  .afklaring-img1 {
     padding-top: 16%;
   }
 
-  .afklaring-img2{
-    padding-top: 16%
+  .afklaring-img2 {
+    padding-top: 16%;
   }
 
-  .afklaring-img3{
-    padding-top: 12%
+  .afklaring-img3 {
+    padding-top: 12%;
   }
 }
