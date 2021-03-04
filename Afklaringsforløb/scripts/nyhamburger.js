@@ -1,5 +1,5 @@
 function opennav() {
-  document.getElementById("slidenav").style.width = "20%";
+  document.getElementById("slidenav").style.width = "384px";
   document.getElementById("menuicon").style.display = "none";
 }
 function closnav() {
