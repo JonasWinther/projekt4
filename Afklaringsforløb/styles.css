@@ -53,11 +53,11 @@ h1 {
   padding-bottom: 2rem;
 }
 
-h1 .green {
+.green {
   color: #a6bb75;
 }
 
-h1 .orange {
+.orange {
   color: #d8a55a;
 }
 
@@ -209,6 +209,10 @@ html {
     "tekst3 img3";
 }
 
+.faser-mobil{
+  display: none;
+}
+
 .fasergrid-img1 {
   grid-area: img4;
   height: 250px;
@@ -352,12 +356,18 @@ html {
   cursor: pointer;
   font-weight: 700;
   padding: 5px 20px;
+  transition: 200ms;
 }
 
 .kontaktos {
   background-color: #ffffff;
   color: #aa81ac;
   border: 5px solid #aa81ac;
+}
+
+.kontaktos:hover{
+  background-color: #aa81ac;
+  color: #fff;
 }
 
 /*Navigation*/
@@ -639,14 +649,109 @@ button > h4 {
 
 @media screen and (max-width: 1500px) {
   .afklaring-img1 {
-    padding-top: 16%;
+    padding-top: 10%;
   }
 
   .afklaring-img2 {
-    padding-top: 16%;
+    padding-top: 18%;
   }
 
   .afklaring-img3 {
     padding-top: 12%;
+  }
+
+  .fasergrid-img1 {
+    padding-top: 11%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .slidenav{
+    background-color: #fff;
+    border-left: solid 2px grey;
+  }
+
+  h1{
+    font-size: 32px;
+  }
+
+  .main-message h1{
+    font-size: 35px;
+  }
+
+  .main-message h2{
+    font-size: 35px;
+  }
+
+  main{
+    display: none;
+  }
+
+  .afklaring_grid{
+    margin-right: 7%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img1"
+    "tekst1"
+    "img2"
+    "tekst2"
+    "img3"
+    "tekst3";
+  }
+
+  .afklaring-img1{
+    padding: 0;
+  }
+
+  .faser_grid{
+    margin-right: 7%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img4"
+    "tekst4";
+  }
+
+  .fasergrid-img1{
+    padding-top: 0;
+  }
+
+  .kontaktgrid{
+    margin-right: 7%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "kontakttekst"
+    "kontaktbillede";
+  }
+
+  .kontakttekst{
+    padding-right: 0;
+  }
+
+  .kontakt h1{
+    font-size: 32px;
+  }
+
+  .faser-mobil{
+    display: contents;
+    padding-left: 7%;
+  }
+
+  .faser-mobil h2{
+    font-weight: 700;
+  }
+
+  .faser-mobil > p, h2, h3{
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .section-1 h2{
+    margin-left: 0;
+  }
+
+  .kontakt h2{
+    margin-left: 0;
+  }
+
+  .red{
+    color: #cb7854;
   }
 }

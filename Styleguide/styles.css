@@ -179,14 +179,14 @@ farverBorder {
 
 .farveSection h1 {
   font-size: 40px;
-  margin-left: 400px;
+  margin-left: 385px;
   color: #515f6d;
 	font-weight: 700;
 
 }
 .farveSection .color {
   margin: 14px 0px;
-  width: 65%;
+  width: 60%;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -233,7 +233,6 @@ farverBorder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 5%;
   font-family: proxima-nova, sans-serif;
   margin-top: 5%;
 }
@@ -257,28 +256,20 @@ farverBorder {
 .knapperSection article h3 {
 }
 
-.knapperSection article hr {
-  width: 60%;
-  margin: 10px 0;
-}
 
-.knapperSection article p {
-  font-size: 20px;
-  margin: 10px 0;
-}
 
 
 /* Knapper */
 
 .atomicknapper {
   width: 70%;
-  margin-left: 5%;
+
   margin-top: 1%;
 }
 
 .knapperBorder .atomicheaderknapper {
   font-size: 20px;
-  margin-left: 5%;
+
   margin-top: 5%;
 }
 
@@ -383,7 +374,7 @@ farverBorder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 5%;
+
 }
 
 
@@ -430,12 +421,12 @@ farverBorder {
   color: #515f6d;
   font-weight: 400;
   font-size: 22px;
-	margin-left: 130px;
+	margin-left: 60px;
 
 }
 
 .typoSection .ptools h3 {
-  margin-left: 10%;
+
   color: #515f6d;
     font-weight: 400;
     font-size: 18px
@@ -443,14 +434,14 @@ farverBorder {
 
 .typoSection .ptools hr {
   width: 100%;
-  margin: 10px 0;
+
   margin-left: 20%;
 }
 
 .typoSection .ptools p {
   margin-bottom: 1.7em;
   line-height: 1.7;
-  margin-left: 10%;
+
   margin-right: 10%;
 }
 
@@ -460,7 +451,7 @@ farverBorder {
   border-left: 3px solid #9CD9B9;
   background-image: linear-gradient(to right, rgb(236, 236, 236), white);
   margin-bottom: 40px;
-  margin-left: 20%;
+
   width: 75%;
   }
 
