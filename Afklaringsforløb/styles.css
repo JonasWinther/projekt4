@@ -177,7 +177,7 @@ html {
 .afklaring-img1 {
   grid-area: img1;
   height: 250px;
-  width: 250px;
+  width: auto;
   padding-left: 20%;
   padding-top: 5%;
 }
@@ -208,13 +208,23 @@ html {
     "tekst2 img2"
     "tekst3 img3";
 }
+
+.fasergrid-img1{
+  grid-area: img4;
+  height: 250px;
+  width: 250px;
+  padding-left: 20%;
+}
+
 .faser_grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  /*grid-template-areas: "afklaring_tekst afklaring_billede nav";*/
+  grid-template-columns: 32.5% 67.5%;
+  grid-template-rows: auto;
+  grid-template-areas: "tekst4 img4";
 }
 
 .faser_tekst {
+  grid-area: tekst4;
   padding-right: 35%;
 }
 
@@ -418,4 +428,18 @@ html {
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+@media screen and (max-width: 1500px){
+  .afklaring-img1{
+    padding-top: 16%;
+  }
+
+  .afklaring-img2{
+    padding-top: 16%
+  }
+
+  .afklaring-img3{
+    padding-top: 12%
+  }
 }
