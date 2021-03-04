@@ -209,11 +209,12 @@ html {
     "tekst3 img3";
 }
 
-.fasergrid-img1{
+.fasergrid-img1 {
   grid-area: img4;
   height: 250px;
   width: 250px;
   padding-left: 20%;
+  padding-top: 5%;
 }
 
 .faser_grid {
@@ -223,7 +224,7 @@ html {
   grid-template-areas: "tekst4 img4";
 }
 
-.faser_tekst {
+.faser-tekst {
   grid-area: tekst4;
   padding-right: 35%;
 }
@@ -245,7 +246,7 @@ html {
 
 .scroll {
   position: absolute;
-  top: 83%;
+  top: 84%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #6f95aa;
@@ -261,7 +262,7 @@ html {
 }
 .arrow {
   position: absolute;
-  top: 84%;
+  top: 89%;
   left: 50%;
   margin-left: 0;
   transform: translate(-50%, -50%);
@@ -430,16 +431,16 @@ li {
   text-align: -webkit-match-parent;
 }
 
-@media screen and (max-width: 1500px){
-  .afklaring-img1{
+@media screen and (max-width: 1500px) {
+  .afklaring-img1 {
     padding-top: 16%;
   }
 
-  .afklaring-img2{
-    padding-top: 16%
+  .afklaring-img2 {
+    padding-top: 16%;
   }
 
-  .afklaring-img3{
-    padding-top: 12%
+  .afklaring-img3 {
+    padding-top: 12%;
   }
 }
