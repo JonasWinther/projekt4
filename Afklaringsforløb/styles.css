@@ -209,7 +209,7 @@ html {
     "tekst3 img3";
 }
 
-.faser-mobil{
+.faser-mobil {
   display: none;
 }
 
@@ -365,7 +365,7 @@ html {
   border: 5px solid #aa81ac;
 }
 
-.kontaktos:hover{
+.kontaktos:hover {
   background-color: #aa81ac;
   color: #fff;
 }
@@ -497,11 +497,6 @@ h3 {
 
 #fase1 {
   background-color: #aab97d;
-}
-
-.tabcontents > h3 {
-  margin-block-start: none;
-  margin-block-end: none;
 }
 
 #fase2 {
@@ -666,92 +661,96 @@ button > h4 {
 }
 
 @media screen and (max-width: 1000px) {
-
-  .slidenav{
+  .slidenav {
     background-color: #fff;
     border-left: solid 2px grey;
   }
 
-  h1{
+  h1 {
     font-size: 32px;
   }
 
-  .main-message h1{
+  .main-message h1 {
     font-size: 35px;
   }
 
-  .main-message h2{
+  .main-message h2 {
     font-size: 35px;
   }
 
-  main{
+  main {
     display: none;
   }
 
-  .afklaring_grid{
+  .afklaring_grid {
     margin-right: 7%;
     grid-template-columns: 1fr;
-    grid-template-areas: "img1"
-    "tekst1"
-    "img2"
-    "tekst2"
-    "img3"
-    "tekst3";
+    grid-template-areas:
+      "img1"
+      "tekst1"
+      "img2"
+      "tekst2"
+      "img3"
+      "tekst3";
   }
 
-  .afklaring-img1{
+  .afklaring-img1 {
     padding: 0;
   }
 
-  .faser_grid{
+  .faser_grid {
     margin-right: 7%;
     grid-template-columns: 1fr;
-    grid-template-areas: "img4"
-    "tekst4";
+    grid-template-areas:
+      "img4"
+      "tekst4";
   }
 
-  .fasergrid-img1{
+  .fasergrid-img1 {
     padding-top: 0;
   }
 
-  .kontaktgrid{
+  .kontaktgrid {
     margin-right: 7%;
     grid-template-columns: 1fr;
-    grid-template-areas: "kontakttekst"
-    "kontaktbillede";
+    grid-template-areas:
+      "kontakttekst"
+      "kontaktbillede";
   }
 
-  .kontakttekst{
+  .kontakttekst {
     padding-right: 0;
   }
 
-  .kontakt h1{
+  .kontakt h1 {
     font-size: 32px;
   }
 
-  .faser-mobil{
+  .faser-mobil {
     display: contents;
     padding-left: 7%;
   }
 
-  .faser-mobil h2{
+  .faser-mobil h2 {
     font-weight: 700;
   }
 
-  .faser-mobil > p, h2, h3{
+  .faser-mobil > p,
+  h2,
+  h3 {
     margin-left: 7%;
     margin-right: 7%;
   }
 
-  .section-1 h2{
+  .section-1 h2 {
     margin-left: 0;
   }
 
-  .kontakt h2{
+  .kontakt h2 {
     margin-left: 0;
   }
 
-  .red{
+  .red {
     color: #cb7854;
   }
 }
