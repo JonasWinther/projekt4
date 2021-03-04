@@ -432,13 +432,16 @@ li {
 }
 /*Faserne*/
 main {
-  height: 500px;
+  height: 800px;
   width: 800px;
   display: grid;
   grid-template-columns: 138;
   grid-template-rows: 498px;
   grid-template-areas: "a";
   margin-left: 7%;
+}
+main p {
+  font-size: 15px;
 }
 
 .tab {
@@ -449,6 +452,7 @@ main {
   align-items: baseline;
   grid-area: a;
   grid-gap: 10px;
+  height: 600px;
 }
 
 .tabcontent {
@@ -506,7 +510,7 @@ main {
 .tab > button {
   text-align: center;
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-rows: 150px 150px 150px 150px 150px;
   grid-template-areas:
     "a"
     "b"
@@ -545,6 +549,7 @@ main {
   background-color: #aab97d;
   justify-content: center;
   margin-top: auto;
+  height: 600px;
 }
 
 .tablinks2 > h3 {
@@ -622,7 +627,7 @@ main {
 }
 
 .fase-1 {
-  text-align: center;
+  margin-left: 30%;
 }
 @media screen and (max-width: 1500px) {
   .afklaring-img1 {
